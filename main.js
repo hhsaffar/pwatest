@@ -1,9 +1,9 @@
 // Register the service worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/pwatest/service-worker.js', {scope: '/pwatest/'})
+      navigator.serviceWorker.register('hhsaffar.github.io/pwatest/service-worker.js')
         .then(registration => {
-          console.log('Service Worker registered with scope:', registration.scope,' yay!');
+          console.log('Service Worker registered with scope:', registration.scope,' yayz!');
         })
         .catch(error => {
           console.error('Service Worker registration failed:', error);
