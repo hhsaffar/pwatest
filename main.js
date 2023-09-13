@@ -3,7 +3,7 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/pwatest/service-worker.js', {scope: '/pwatest/'})
         .then(registration => {
-          console.log('Service Worker registered with scope:', registration.scope);
+          console.log('Service Worker registered with scope:', registration.scope,' yay!');
         })
         .catch(error => {
           console.error('Service Worker registration failed:', error);
